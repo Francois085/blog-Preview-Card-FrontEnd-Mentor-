@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: hsl(47, 88%, 63%) ;
+    font-family: "Figtree", sans-serif;
+}
+
+main{
+    margin: 5% auto;
+    width: 384px;
+    height: 522px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray-900;
+    border-radius: 20px;
+    padding: 24px 24px;
+    box-shadow: 8px 8px black;
+    transition: 0.3s ;
+    
+}
+
+main:hover  {
+    box-shadow: 16px 16px black;
+    transition: 0.3s;
+    
+
+}
+main:hover .foundations{
+    color: hsl(47, 88%, 63%);
+    transition: 0.3s;
+}
+
+ #svgWrapper{
+    border-radius: 10px;
+}
+
+.content-txt{
+    margin-top: 20px;
+    width: 336px;
+    height: 194px;
+}
+
+.learning{    
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    width: 85px;
+    height: 30px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 800;    
+}
+.published{
+    margin-top: 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.foundations{
+    margin-top: 18px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+ 
+.details{
+    margin-top: 16px;
+    line-height: 1.5rem;
+}
+
+.name{
+    display: flex;
+    width: 129px;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    gap: 12px;
+    align-items:center;
+    font-weight: 900;
+}
+.name img{
+    height: 32px;
+}
+
+@media screen and (max-width : 500px) {
+    main {
+        width: 327px;
+        height: 501px;
+        border: 1px solid #262626;
+        font-size: 0.9rem;
+        
+    }
+    .logo{
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    main:hover  {
+        box-shadow: 8px 8px black;     
+    }
+
+    main:hover .foundations{
+        color: black;
+    }
+
+}
